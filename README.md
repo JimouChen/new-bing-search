@@ -32,4 +32,4 @@ pip3 install -r requirements.txt
 - If it is a json format prompt, you can directly refer to the answer folder under the answer.json file format
 
 ## Reference
-[EdgeGPT counterattack cracking library](https://github.com/acheong08/EdgeGPT)
+- [EdgeGPT counterattack cracking library](https://github.com/acheong08/EdgeGPT)
