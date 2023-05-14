@@ -4,7 +4,7 @@
   <img width="417" alt="image" src="https://github.com/JimouChen/new-bing-search/assets/63119239/451014a7-57d6-4750-b010-8639779d44bf">
 
 <a>English</a> -
-<a href="https://github.com/JimouChen/new-bing-search/edit/main/README_CN.md">简体中文</a>
+<a href="https://github.com/JimouChen/new-bing-search/blob/main/README_CN.md">简体中文</a>
 </div>
 
 - Use the New Bing counterattack cracking library interface to encapsulate the api, which is convenient for reading questions from files and searching for answers
