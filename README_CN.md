@@ -3,7 +3,7 @@
   <img width="417" alt="image" src="https://github.com/JimouChen/new-bing-search/assets/63119239/451014a7-57d6-4750-b010-8639779d44bf">
 
 <a>简体中文</a> -
-<a href="https://github.com/JimouChen/new-bing-search/edit/main/README.md">English</a>
+<a href="https://github.com/JimouChen/new-bing-search/blob/main/README.md">English</a>
 </div>
 
 - 使用New Bing的逆袭破解库接口封装api，便于从文件中读取问题，进行搜索回答
