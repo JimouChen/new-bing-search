@@ -12,7 +12,11 @@
 ## 环境说明
 - 安装第三方库
 > 要求python3.8 +
-```pip3 install -r requirements.txt```
+
+```bash
+pip3 install -r requirements.txt
+```
+
 ### cookies.json的获取
 - 安装`cookies`插件，用法如下图
 - 导出`json`格式的即可，然后黏贴在`cookies.json`文件

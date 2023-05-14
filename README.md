@@ -13,7 +13,10 @@
 ## Environment description
 - Install third-party libraries
 > Requires `python3.8+`
-```pip3 install -r requirements.txt```
+
+```bash
+pip3 install -r requirements.txt
+```
 
 ## How to get cookies.json
 - Install the cookies plugin, as shown in the figure below
