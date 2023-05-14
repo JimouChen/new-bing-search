@@ -13,7 +13,10 @@
 ## Environment description
 - Install third-party libraries
 > Requires `python3.8+`
-```pip3 install -r requirements.txt```
+
+```bash
+pip3 install -r requirements.txt
+```
 
 ## How to get cookies.json
 - Install the cookies plugin, as shown in the figure below
@@ -29,4 +32,5 @@
 - If it is a json format prompt, you can directly refer to the answer folder under the answer.json file format
 
 ## Reference
-[EdgeGPT counterattack cracking library](https://github.com/acheong08/EdgeGPT)
+
+- [EdgeGPT counterattack cracking library](https://github.com/acheong08/EdgeGPT)
