@@ -1,0 +1,12 @@
+{
+    "breakpoint": {
+        "is_finished": true,
+        "item_bp": 0,
+        "question": ""
+    },
+    "path": {
+        "log": "./logs/search.log",
+        "prompt": "./data/prompt/prompt.xlsx",
+        "answer": "./data/answer/answer.json"
+    }
+}
