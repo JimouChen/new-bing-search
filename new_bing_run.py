@@ -1,6 +1,5 @@
 # !/usr/bin/env python3
 # _*_ coding: utf-8 _*_
-
 from comm.utils import *
 
 if __name__ == '__main__':
@@ -14,3 +13,5 @@ if __name__ == '__main__':
                        cfg_data['path']['answer'],
                        'Q')
     NewBingCrawler.search_from_prompt_json(prompt_path=cfg_data['path']['answer'])
+    FileUtils.json2exl(cfg_data['path']['answer'],
+                       cfg_data['path']['response'])

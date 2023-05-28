@@ -2,11 +2,12 @@
     "breakpoint": {
         "is_finished": false,
         "item_bp": 0,
-        "question": ""
+        "question": "美的和格力空调去年销量怎么样"
     },
     "path": {
         "log": "./logs/search.log",
         "prompt": "./data/prompt/prompt.xlsx",
-        "answer": "./data/answer/answer.json"
+        "answer": "./data/answer/answer.json",
+        "response": "./data/answer/response.xlsx"
     }
 }

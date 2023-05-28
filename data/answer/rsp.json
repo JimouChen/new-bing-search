@@ -1,0 +1,178 @@
+{
+    "type": 2,
+    "invocationId": "0",
+    "item": {
+        "messages": [
+            {
+                "text": "美的和格力空调去年销量怎么样",
+                "author": "user",
+                "from": {
+                    "id": "844426526075136",
+                    "name": null
+                },
+                "createdAt": "2023-05-28T11:05:44.4128592+00:00",
+                "timestamp": "2023-05-28T11:05:44.4087684+00:00",
+                "locale": "en-us",
+                "market": "en-us",
+                "region": "us",
+                "messageId": "d3085402-a8b0-4079-953c-e7be0ef56589",
+                "requestId": "d3085402-a8b0-4079-953c-e7be0ef56589",
+                "nlu": {
+                    "scoredClassification": {
+                        "classification": "CHAT_GPT",
+                        "score": null
+                    },
+                    "classificationRanking": [
+                        {
+                            "classification": "CHAT_GPT",
+                            "score": null
+                        }
+                    ],
+                    "qualifyingClassifications": null,
+                    "ood": null,
+                    "metaData": null,
+                    "entities": null
+                },
+                "offense": "None",
+                "feedback": {
+                    "tag": null,
+                    "updatedOn": null,
+                    "type": "None"
+                },
+                "contentOrigin": "cib",
+                "privacy": null,
+                "inputMethod": "Keyboard"
+            },
+            {
+                "text": "根据我找到的资料，2022年12月及全年汽车销量情况已经公布。但是我没有找到美的和格力空调的销量数据。您是否需要了解其他品牌的销量情况呢？",
+                "author": "bot",
+                "createdAt": "2023-05-28T11:05:54.0202415+00:00",
+                "timestamp": "2023-05-28T11:05:54.0202415+00:00",
+                "messageId": "e3566428-395a-40c3-a17e-4347401385d8",
+                "requestId": "d3085402-a8b0-4079-953c-e7be0ef56589",
+                "offense": "None",
+                "adaptiveCards": [
+                    {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                            {
+                                "type": "TextBlock",
+                                "text": "[1]: https://www.qianzhan.com/analyst/detail/220/211227-512d13bb.html \"2022年中国空调行业供需现状与市场规模分析 行业出现产能过剩问题【组图】_行业研究报告 - 前瞻网\"\n[2]: https://www.coca-colacompany.com/cn/news/kkklgs2022Q3cb \"可口可乐公司2022Q3财报：全球单箱销量增长4% 亚太单箱销量增长9%\"\n[3]: https://zhuanlan.zhihu.com/p/598072037 \"官宣！2022年汽车厂商销量出炉，比亚迪、长安、吉利进前五 - 知乎\"\n\n根据我找到的资料，2022年12月及全年汽车销量情况已经公布。但是我没有找到美的和格力空调的销量数据。您是否需要了解其他品牌的销量情况呢？\n",
+                                "wrap": true
+                            },
+                            {
+                                "type": "TextBlock",
+                                "size": "small",
+                                "text": "Learn more: [1. www.qianzhan.com](https://www.qianzhan.com/analyst/detail/220/211227-512d13bb.html) [2. www.coca-colacompany.com](https://www.coca-colacompany.com/cn/news/kkklgs2022Q3cb) [3. zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/598072037)",
+                                "wrap": true
+                            }
+                        ]
+                    }
+                ],
+                "sourceAttributions": [
+                    {
+                        "providerDisplayName": "2022年中国空调行业供需现状与市场规模分析 行业出现产能过剩问题【组图】_行业研究报告 - 前瞻网",
+                        "seeMoreUrl": "https://www.qianzhan.com/analyst/detail/220/211227-512d13bb.html",
+                        "searchQuery": "美的和格力空调2022年销量"
+                    },
+                    {
+                        "providerDisplayName": "可口可乐公司2022Q3财报：全球单箱销量增长4% 亚太单箱销量增长9%",
+                        "seeMoreUrl": "https://www.coca-colacompany.com/cn/news/kkklgs2022Q3cb",
+                        "imageLink": "https://bing.com/th?id=OIP.49CzHXwhesi9hr5ccfQFLwHaGS&pid=cdx",
+                        "imageWidth": "728",
+                        "imageHeight": "618",
+                        "imageFavicon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVfSURBVFhHtZfbT1RXFMbtzaZ9bh99sH1q08tjNTGhSX3yhf4DTWPa2lobq/FS2moJmlqLYhrLtVAQAbl1QEVAMAhaK1RgYBh0uDl4AWYGmBEHmBsz5+u399kTOnJmQNRf8jFnr7P3WuvsvfY+hzUrAcDz1Buapn1GlVJWyk0tUGHqAWWjqqkd1Fvs/6IavnpEYDp7n8qghjSnMwS/n+b4aL7ZsBYJ32H/PGojTatLhANfo4NUalx6FtTWAnV1qmGAxwkUHQS8Htnk2GnqBLVOuV0ZHPAu1URFpKcora3A1q1AKKQMj9BQAOzdDPjnlEGHfjr4s0m5Tww7b6D69KGP4HYDO3YAY2PK8AjZu4DiVNWIhT5HqS0qjDHs8B5lUWOWommAyxV/BqYngIfTqrEU+ha1kaTCxcIbr3PGm9hNdX8WSN9djLVehV2ExlQt4NFgPgo4rsnuTxPNNYxwXz0QmBUzkUPTSyq0DC62GheWNXcrn9WeBAycEsPk4CclbG1EoPBThG0tyoIZarMKLxPI0O0KZzswdIYXTykBBo7cNauWDmOKAGtF8DepQd28Mm6PjMBs7sbIyDB6zGZYLBZEIrE7djkY00ltEAmI4zVOWRszMjyMtrZW1Jj+Qm5ONs7W1jx2AgLGTRMJlKq2IX4evbdu3YRjgltMEQ6HEQgEpLxeLxwOBwYHB3Czv1/OjMfjgc/n4451yT6MoUbGQvtVkYDxoUOEg5zsTPmk1679LZ8yGAxiYWFBJhbieSD6FBX9iZKS02hubkJz00UcP56O30/+hpycLAwMDChvS2HsaZEAj7elzM3NIfWnAzAxeFVlBS7UnUdtjQk1VFlZCXJzs3H5cgvS0lJx6VIzujo7eVC65ZOLe5WV5Qxuk7MVD8bWRAILqh2DyVSNQ4dSUV1ViczMk9i/f69MJCPjGA78+L28n8dAx4/9KgtRLIEoxmj/hvoL6OrqjDv9UUQCS1IUg1K+28d3z2Uc/eVnNDTUIz39KJ+qAt/u/Ea/x6f/evs2LlGWTEYkkp2ViZSUfchiAgcP/ICqqgrlMT4igQfqOobDh9Nw9mwt7t27h/HxMXS0t8upFfb29uvo67Pgy22fS/tJrvcJzkx+fh727NmF7V99gd27d8qiXA6RgE1dxzDON97Fi41yaqcmJzEzMyN3QxOLbGhoULZFwYl17u+3wtytnwuXWIh1rJcrV9pkkSZCPLxIoFq1EyK22/z8vCxOsbXELhDXwhbgdXRbCiUqvP/D2B0iAfENl3DE1NQUGhvrZS2IdS0sLJAqKPgDpaWnUVx8ChXlZ1BZUY5zXLaJicWPqEQwbrpI4G1qVNkMEVurt7cXVmufrGwLrzs7b8Bms8Fuvy23oMXSK+vCbrfLWVgOxhTb/8Poh2eetCpCc3fhvd8ILRJUlidBwwOXHUG/V7V1GPMcf16Nvg03UlPiRmDGhvEbe+G5XcZehkfE48EtPWptQV9bMbzT95VJm6eSZXABbS/QcELc9Hus8Ll72GtlhbQi+G3rHO3B2OB1mRBjnaFeUeF1aFhHia/XZ4cefJB6R4WNhV028aZd772UCNfTG/Hxr/Hx6ufLaiHByUvfk/z5WIUzhp22UHf0IbHcCU7iyJgJsxHj/47KHC50PpxVrVhEcOoTXj6nQsWHHZOobn3oIjXuDhwZN8X9UKubciPn/uJ3QxT6EtOezMvlg0fhgPVULvVQdwMUTrbgH6/hyS1xBUMo4SyE1BuQY31UOWW85stBH2s5+CPlxOUIerTQMrvDySRCEc3D/uepZCq22lcDnbxMfUClUVcpo39/Zmj/l0qn+F2vDpmErFnzH1D5tV5l+C38AAAAAElFTkSuQmCC",
+                        "searchQuery": "美的和格力空调2022年销量"
+                    },
+                    {
+                        "providerDisplayName": "官宣！2022年汽车厂商销量出炉，比亚迪、长安、吉利进前五 - 知乎",
+                        "seeMoreUrl": "https://zhuanlan.zhihu.com/p/598072037",
+                        "imageLink": "https://bing.com/th?id=OIP.vRDDk_KZLjdnBH-cV6X2JAHaE0&pid=cdx",
+                        "imageWidth": "984",
+                        "imageHeight": "640",
+                        "imageFavicon": "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",
+                        "searchQuery": "美的和格力空调2022年销量"
+                    }
+                ],
+                "feedback": {
+                    "tag": null,
+                    "updatedOn": null,
+                    "type": "None"
+                },
+                "contentOrigin": "DeepLeo",
+                "privacy": null,
+                "suggestedResponses": [
+                    {
+                        "text": "好的，告诉我其他品牌的销量情况。",
+                        "author": "user",
+                        "createdAt": "2023-05-28T11:05:56.6428047+00:00",
+                        "timestamp": "2023-05-28T11:05:56.6428047+00:00",
+                        "messageId": "474896c7-95dd-430b-ad8d-f6537325199b",
+                        "messageType": "Suggestion",
+                        "offense": "Unknown",
+                        "feedback": {
+                            "tag": null,
+                            "updatedOn": null,
+                            "type": "None"
+                        },
+                        "contentOrigin": "DeepLeo",
+                        "privacy": null
+                    },
+                    {
+                        "text": "不用了，谢谢。",
+                        "author": "user",
+                        "createdAt": "2023-05-28T11:05:56.6428086+00:00",
+                        "timestamp": "2023-05-28T11:05:56.6428086+00:00",
+                        "messageId": "eb7b5145-215e-4455-bb91-4cae8ad16fa2",
+                        "messageType": "Suggestion",
+                        "offense": "Unknown",
+                        "feedback": {
+                            "tag": null,
+                            "updatedOn": null,
+                            "type": "None"
+                        },
+                        "contentOrigin": "DeepLeo",
+                        "privacy": null
+                    },
+                    {
+                        "text": "Write a fun to story to read",
+                        "author": "user",
+                        "createdAt": "2023-05-28T11:05:56.817761+00:00",
+                        "timestamp": "2023-05-28T11:05:56.817761+00:00",
+                        "messageId": "0a27b7f6-8bb0-47b0-befd-728b926de594",
+                        "messageType": "Suggestion",
+                        "offense": "Unknown",
+                        "feedback": {
+                            "tag": null,
+                            "updatedOn": null,
+                            "type": "None"
+                        },
+                        "contentOrigin": "SuggestionChipsFalconService",
+                        "privacy": null
+                    }
+                ],
+                "spokenText": "您是否需要了解其他品牌的销量情况呢？"
+            }
+        ],
+        "firstNewMessageIndex": 1,
+        "defaultChatName": null,
+        "conversationId": "51D|BingProd|F551933A259127DBC55EA674E61FDDB366B06E2AC98C9DB3A9F272B0929C5BB9",
+        "requestId": "d3085402-a8b0-4079-953c-e7be0ef56589",
+        "conversationExpiryTime": "2023-05-28T17:05:56.8333292Z",
+        "shouldInitiateConversation": true,
+        "telemetry": {
+            "metrics": null,
+            "startTime": "2023-05-28T11:05:44.4088669Z"
+        },
+        "throttling": {
+            "maxNumUserMessagesInConversation": 20,
+            "numUserMessagesInConversation": 1
+        },
+        "result": {
+            "value": "Success",
+            "message": "美的和格力空调去年销量",
+            "serviceVersion": "20230526.52"
+        }
+    }
+}
