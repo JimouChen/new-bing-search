@@ -23,11 +23,14 @@ pip3 install -r requirements.txt
  pip3 install openpyxl
 ```
 
+- 若报了`TypeError: unsupported operand type(s) for |: 'EnumMeta' and '_GenericAlias'`，则用`comm`下的nb.py里面的内容替换掉`EdgeGPT.py`
+
 ### cookies.json的获取
 - 安装`cookies`插件，用法如下图
 - 导出`json`格式的即可，然后黏贴在`cookies.json`文件
 <img width="1156" alt="image" src="https://github.com/JimouChen/new-bing-search/assets/63119239/b14779d7-40ef-4f82-88d6-17d29f59c2f8">
 
+- 把`cookies.json`放到`conf`下，命名用：`bing_cookies_*.json`
 
 ## prompt格式
 - 用`excel`格式
