@@ -1,31 +1,31 @@
 [
     {
-        "Q": "美的和格力空调哪个性价比高",
-        "A": "很抱歉，我无法找到关于美的和格力空调哪个性价比高的信息。您可以告诉我您更关心哪些方面吗？",
+        "Q": "1+2+3+...+100=?",
+        "A": "The sum of the first 100 positive integers is 5050. This can be calculated using the formula for the sum of an arithmetic series: n(n+1)/2, where n is the number of terms in the series. In this case, n=100, so the sum is 100(100+1)/2 = 5050. Is there anything else you would like to know?",
         "suggestions": [
-            "美的空调和格力空调哪个好？",
-            "美的空调和格力空调哪个更省电？",
-            "美的空调和格力空调哪个好用？"
+            "What is an arithmetic series?",
+            "Can you show me how to derive the formula for sum of n integers?",
+            "How do I calculate the sum of odd numbers from 1-100?"
         ],
         "searching_words": []
     },
     {
         "Q": "谷歌员工的最低年薪是多少",
-        "A": "我很抱歉，我无法找到谷歌员工最低年薪的确切数字。不过，根据 Glassdoor 的数据，谷歌的工资待遇是非常优厚的，而且员工的薪资水平会因地区、职位和经验等因素而有所不同。\n\n你是否需要了解更多关于谷歌员工薪资待遇的信息呢？",
+        "A": "对不起，我无法找到有关谷歌员工最低年薪的确切信息。您是否想了解谷歌员工的平均年薪或其他相关信息？",
         "suggestions": [
-            "谷歌员工的职位和经验对薪资有什么影响？",
-            "谷歌员工福利待遇如何？",
-            "谷歌员工平均年薪是多少？"
+            "是的，请告诉我谷歌员工的平均年薪。",
+            "不，我想知道其他公司的最低年薪。",
+            "请告诉我有关谷歌员工福利计划的信息。"
         ],
         "searching_words": []
     },
     {
-        "Q": "在谷歌工作需要交多少税",
-        "A": "我很抱歉，我无法找到关于在谷歌工作需要交多少税的信息。我建议您查看美国国税局（IRS）的网站，或者咨询一位税务专家以获取更准确的答案。您还有其他问题吗？",
+        "Q": "蕉下的产品怎么样",
+        "A": "您好，这是必应。您能否详细说明您想了解的产品？😊",
         "suggestions": [
-            "你能告诉我如何查看美国国税局（IRS）的网站吗？",
-            "你能告诉我如何联系税务专家吗？",
-            "你能告诉我如何了解美国税法吗？"
+            "蕉下有哪些产品？",
+            "我想了解一下他们的智能手表。",
+            "你可以告诉我关于蕉下公司的更多信息吗？"
         ],
         "searching_words": []
     }

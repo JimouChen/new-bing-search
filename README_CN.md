@@ -17,6 +17,12 @@
 pip3 install -r requirements.txt
 ```
 
+- 需要安装：
+```shell
+ pip3 install aiohttp
+ pip3 install openpyxl
+```
+
 ### cookies.json的获取
 - 安装`cookies`插件，用法如下图
 - 导出`json`格式的即可，然后黏贴在`cookies.json`文件
@@ -30,6 +36,5 @@ pip3 install -r requirements.txt
 
 - 用`json`格式
   - 如是`json`格式的`prompt`，可直接参考`answer`文件夹下的`answer.json`文件格式
-
 ## 参考
 - [EdgeGPT逆袭破解库](https://github.com/acheong08/EdgeGPT)

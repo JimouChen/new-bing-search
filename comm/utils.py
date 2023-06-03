@@ -2,74 +2,41 @@
 # _*_ coding: utf-8 _*_
 import json
 import time
-import asyncio
 import pandas as pd
 from loguru import logger
-from EdgeGPT import Chatbot, ConversationStyle
+from EdgeGPT import Query
 
 
 class NewBingCrawler:
-    cookies_path = './conf/cookies.json'
 
     @classmethod
-    def search(cls, question, word_num=2000):
+    def search(cls, question, style: str = 'precise', word_num=4000):
+        # 或者balanced| precise| creative
         if len(question) > word_num:
             logger.warning(f'question word num more over than {word_num}！！！')
             return ''
 
-        async def crawl(style='precise'):
-            bot = Chatbot(cookie_path=cls.cookies_path)
-            if style == 'balanced':
-                res_dict = (await bot.ask(prompt=question,
-                                          conversation_style=ConversationStyle.balanced))
-            else:
-                # res_dict = FileUtils.load_json('./data/answer/rsp.json')
-                res_dict = (await bot.ask(prompt=question,
-                                          conversation_style=ConversationStyle.precise))
-            await bot.close()
-            logger.info(f'using {style} to search')
-            msg = None
-            try:
-                msg = res_dict['item']['messages']
-            except:
-                logger.warning('很抱歉，你已达到可在 24 小时内发送到必应的邮件限制。请稍后回来查看!')
-                exit(0)
-            flag, suggestion_list, searching_list = True, [], []
-            if 'text' not in msg[1].keys():
-                answer = msg[1]['spokenText']
-                flag = False
-            else:
-                answer = msg[1]['text']
-                suggestions = msg[1]['suggestedResponses']
-                suggestion_list = list(set(suggestion['text'] for suggestion in suggestions))
-                source_attributions = msg[1]['sourceAttributions']
-                searching_list = list(set(item['searchQuery'] for item in source_attributions))
-
-            # print(json.dumps(res_dict, ensure_ascii=False, indent=4))
-            return flag, answer, suggestion_list, searching_list
-
         start_time = time.time()
-        try:
-            _, res, sg, sw = asyncio.run(crawl())
-            # 优先精确模式，无结果则选平衡模式
-            if not _:
-                _, res, sg, sw = asyncio.run(crawl('balanced'))
-            end_time = time.time()
-            logger.info(f'use time====>: {end_time - start_time}s')
-            logger.info(f'Q: {question}')
-            logger.info(f'A: {res}\n')
-            logger.info(f'Suggestions: {sg}\n')
-        except Exception as e:
-            logger.error(e)
-            return
+        answer = Query(
+            prompt=question,
+            style=style,
+            cookie_file=0
+        )
+
+        logger.info(f'using style: {style}')
+        logger.info(f'A: {answer.output}')
+        logger.info(f'use time: {time.time() - start_time} s')
+        logger.info(f'suggestions: {answer.suggestions}')
+        logger.info(f'search_words: {answer.sources_dict}')
+
         return {
-            'answer': res,
-            'suggestions': sg,
-            'searching_words': sw
+            'answer': answer.output,
+            'suggestions': answer.suggestions,
+            'searching_words': [sw['searchQuery'] for sw in answer.sources],
         }
 
     @classmethod
-    def search_from_prompt_json(cls, prompt_path):
+    def search_from_prompt_json(cls, prompt_path, style='precise'):
         is_finished, item_bp = BreakpointHandler.load()
         if is_finished:
             logger.success('finished getting all answer!')
@@ -82,7 +49,7 @@ class NewBingCrawler:
             try:
                 logger.debug(f'====={idx}=====')
                 logger.debug(f'querying in : {question}')
-                res = NewBingCrawler.search(question)
+                res = NewBingCrawler.search(question=question, style=style)
                 prompt_data[idx]['A'] = res['answer']
                 prompt_data[idx]['suggestions'] = res['suggestions']
                 prompt_data[idx]['searching_words'] = res['searching_words']
@@ -100,7 +67,7 @@ class NewBingCrawler:
 
 class FileUtils:
     @staticmethod
-    def write2json(json_path: str, data: dict):
+    def write2json(json_path: str, data):
         with open(json_path, 'w', encoding='utf-8') as f:
             f.write(json.dumps(data, ensure_ascii=False, indent=4))
         logger.info(f'write json to: {json_path}')

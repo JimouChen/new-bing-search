@@ -1,0 +1,38 @@
+[
+    {
+        "Q": "1+2+3+...+100=?",
+        "A": "The sum of the first 100 positive integers is 5050. This can be calculated using the formula for the sum of an arithmetic series: n(n+1)/2, where n is the number of terms in the series. In this case, n=100, so the sum is 100(100+1)/2 = 5050.",
+        "suggestions": [
+            "What is an arithmetic series?",
+            "Can you show me how to derive the formula for sum of n integers?",
+            "How do I calculate the sum of a geometric series?"
+        ],
+        "searching_words": []
+    },
+    {
+        "Q": "谷歌员工的最低年薪是多少",
+        "A": "对不起，我无法找到有关谷歌员工最低年薪的确切信息。您是否想了解谷歌员工的平均年薪或其他相关信息？",
+        "suggestions": [
+            "是的，请告诉我谷歌员工的平均年薪。",
+            "不，我想知道其他公司员工的最低年薪。",
+            "请告诉我有关谷歌员工福利计划的信息。"
+        ],
+        "searching_words": []
+    },
+    {
+        "Q": "蕉下的产品怎么样",
+        "A": "您好，我在搜索结果中找到了一篇关于蕉下防晒衣的文章。根据这篇文章，蕉下的防晒衣防晒效果很好，UPF50+，可以遮挡99%紫外线。面料轻薄，穿着凉快，有降温效果。版型设计也很人性化，有加宽的帽檐、防护面罩、帽洞和指洞等细节设计。总体来说，这篇文章对蕉下防晒衣的评价是非常好的[^1^]。您想了解更多信息吗？",
+        "suggestions": [
+            "蕉下有其他产品吗？",
+            "这个防晒衣的价格是多少？",
+            "我想看一些图片。"
+        ],
+        "searching_words": [
+            {
+                "providerDisplayName": "蕉下防晒衣怎么样? - 知乎 - 知乎专栏",
+                "seeMoreUrl": "https://zhuanlan.zhihu.com/p/394696825",
+                "searchQuery": "蕉下的产品怎么样"
+            }
+        ]
+    }
+]
