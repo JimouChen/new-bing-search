@@ -17,21 +17,35 @@ class NewBingCrawler:
             return ''
 
         start_time = time.time()
-        answer = Query(
-            prompt=question,
-            style=style,
-            cookie_file=0
-        )
+        try:
+            answer = Query(
+                prompt=question,
+                style=style,
+                cookie_file=0
+            )
+            suggest = []
+            logger.info(f'using style: {style}')
+            logger.info(f'A: {answer.output}')
+            logger.info(f'use time: {time.time() - start_time} s')
+            logger.info(f'search_words: {answer.sources_dict}')
 
-        logger.info(f'using style: {style}')
-        logger.info(f'A: {answer.output}')
-        logger.info(f'use time: {time.time() - start_time} s')
-        logger.info(f'suggestions: {answer.suggestions}')
-        logger.info(f'search_words: {answer.sources_dict}')
+            try:
+                suggest = answer.suggestions
+            except Exception as e:
+                logger.error(f'no suggest response :{e}')
+            logger.info(f'suggestions: {suggest}')
+
+        except Exception as e:
+            logger.error(e)
+            return {
+                'answer': "",
+                'suggestions': [],
+                'searching_words': [],
+            }
 
         return {
             'answer': answer.output,
-            'suggestions': answer.suggestions,
+            'suggestions': suggest,
             'searching_words': [sw['searchQuery'] for sw in answer.sources],
         }
 
