@@ -12,6 +12,7 @@ if __name__ == '__main__':
     FileUtils.exl2json(cfg_data['path']['prompt'],
                        cfg_data['path']['answer'],
                        'Q')
-    NewBingCrawler.search_from_prompt_json(prompt_path=cfg_data['path']['answer'])
+    NewBingCrawler.search_from_prompt_json(prompt_path=cfg_data['path']['answer'],
+                                           style='precise')
     FileUtils.json2exl(cfg_data['path']['answer'],
                        cfg_data['path']['response'])
