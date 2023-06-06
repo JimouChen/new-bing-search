@@ -4,7 +4,7 @@ import json
 import time
 import pandas as pd
 from loguru import logger
-from EdgeGPT import Query
+from comm.nb import Query
 
 
 class NewBingCrawler:
@@ -46,7 +46,7 @@ class NewBingCrawler:
         return {
             'answer': answer.output,
             'suggestions': suggest,
-            'searching_words': [sw['searchQuery'] for sw in answer.sources],
+            'searching_words': list(set([sw['searchQuery'] for sw in answer.sources])),
         }
 
     @classmethod
