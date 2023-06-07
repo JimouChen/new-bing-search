@@ -14,7 +14,11 @@ class NewBingCrawler:
         # 或者balanced| precise| creative
         if len(question) > word_num:
             logger.warning(f'question word num more over than {word_num}！！！')
-            return ''
+            return {
+                'answer': f'question word num more over than {word_num}！！！',
+                'suggestions': [],
+                'searching_words': [],
+            }
 
         start_time = time.time()
         try:
