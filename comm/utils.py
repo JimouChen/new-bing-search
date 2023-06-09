@@ -8,13 +8,19 @@ from comm.nb import Query
 
 
 class NewBingCrawler:
+    ThrottledFlag = 'ThrottledCodeExpt'
+    throttled_words = ['Throttled: Request is throttled.']
 
     @classmethod
     def search(cls, question, style: str = 'precise', word_num=4000):
         # 或者balanced| precise| creative
         if len(question) > word_num:
             logger.warning(f'question word num more over than {word_num}！！！')
-            return ''
+            return {
+                'answer': f'question word num more over than {word_num}！！！',
+                'suggestions': [],
+                'searching_words': [],
+            }
 
         start_time = time.time()
         try:
@@ -37,8 +43,9 @@ class NewBingCrawler:
 
         except Exception as e:
             logger.error(e)
+            tmp_ans = cls.ThrottledFlag if str(e) in cls.throttled_words else ''
             return {
-                'answer': "",
+                'answer': tmp_ans,
                 'suggestions': [],
                 'searching_words': [],
             }
@@ -64,6 +71,10 @@ class NewBingCrawler:
                 logger.debug(f'====={idx}=====')
                 logger.debug(f'querying in : {question}')
                 res = NewBingCrawler.search(question=question, style=style)
+                if res['answer'] == cls.ThrottledFlag:
+                    logger.warning('Account usage limit exceeded!/账号次数超限！')
+                    BreakpointHandler.save_breakpoint(idx, question)
+                    exit(0)
                 prompt_data[idx]['A'] = res['answer']
                 prompt_data[idx]['suggestions'] = res['suggestions']
                 prompt_data[idx]['searching_words'] = res['searching_words']
