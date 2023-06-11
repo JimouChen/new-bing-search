@@ -1,3 +1,5 @@
 EdgeGPT==0.7.2
 loguru==0.7.0
 pandas==2.0.1
+aiohttp==3.8.4
+openpyxl==3.1.2
