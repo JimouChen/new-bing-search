@@ -22,6 +22,7 @@ pip3 install -r requirements.txt
 - Install the cookies plugin, as shown in the figure below
 - Export the json format, and then paste it in the cookies.json file 
 <img width="1156" alt="image" src="https://github.com/JimouChen/new-bing-search/assets/63119239/b14779d7-40ef-4f82-88d6-17d29f59c2f8">
+- Put `cookies.json` under `conf`, named as: `bing_cookies_*.json`
 
 ## Prompt format
 ### Use excel format

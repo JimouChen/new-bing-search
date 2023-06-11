@@ -17,14 +17,6 @@
 pip3 install -r requirements.txt
 ```
 
-- 需要安装：
-```shell
- pip3 install aiohttp
- pip3 install openpyxl
-```
-
-- 若报了`TypeError: unsupported operand type(s) for |: 'EnumMeta' and '_GenericAlias'`，则用`comm`下的nb.py里面的内容替换掉`EdgeGPT.py`
-
 ### cookies.json的获取
 - 安装`cookies`插件，用法如下图
 - 导出`json`格式的即可，然后黏贴在`cookies.json`文件
